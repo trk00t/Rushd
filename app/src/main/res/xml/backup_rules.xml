@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude sensitive WebView data from cloud backup -->
+    <exclude domain="database" path="webview.db" />
+    <exclude domain="sharedpref" path="." />
+</full-backup-content>

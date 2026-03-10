@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Used for camera photos during file upload -->
+    <external-files-path
+        name="pictures"
+        path="Pictures/" />
+
+    <!-- Used for downloaded files -->
+    <external-files-path
+        name="downloads"
+        path="Downloads/" />
+</paths>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Replace this with your actual Rushd logo.
+    This is a placeholder "R" lettermark.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="#1A73E8"
+        android:pathData="M60,0 A60,60 0 1,1 60,120 A60,60 0 1,1 60,0 Z" />
+
+    <!-- Letter R -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,28 L38,92 L50,92 L50,66 L62,66 L74,92 L88,92 L74,64
+                          C80,61 84,55 84,46 C84,36 76,28 66,28 Z
+                          M50,38 L64,38 C69,38 72,41 72,46 C72,51 69,56 64,56 L50,56 Z" />
+</vector>

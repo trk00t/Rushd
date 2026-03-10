@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rushd</string>
+
+    <!-- Error & offline screens -->
+    <string name="error_title">Something went wrong</string>
+    <string name="error_message">We couldn\'t load this page.\nPlease try again.</string>
+    <string name="offline_title">No Internet Connection</string>
+    <string name="offline_message">Please check your connection\nand try again.</string>
+    <string name="retry">Try Again</string>
+
+    <!-- File chooser -->
+    <string name="choose_file">Choose a file</string>
+    <string name="no_file_app">No app found to open files</string>
+    <string name="permission_denied">Permission required to access files</string>
+</resources>

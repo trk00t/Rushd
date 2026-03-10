@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Configuration
+    - HTTPS only (no cleartext traffic)
+    - Certificate pinning can be added below per domain
+    - Debug overrides are separated so they never affect release builds
+-->
+<network-security-config>
+
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Uncomment to pin certificates for your domain:
+    <domain-config>
+        <domain includeSubdomains="true">rushd.com</domain>
+        <pin-set expiration="2026-01-01">
+            <pin digest="SHA-256">YOUR_BASE64_PIN_HERE==</pin>
+            <pin digest="SHA-256">YOUR_BACKUP_PIN_HERE==</pin>
+        </pin-set>
+    </domain-config>
+    -->
+
+    <!-- Allow cleartext only in debug builds for local dev servers -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+
+</network-security-config>
